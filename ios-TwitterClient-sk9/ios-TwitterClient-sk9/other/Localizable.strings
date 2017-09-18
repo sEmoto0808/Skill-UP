@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  ios-TwitterClient-sk9
+
+  Created by 江本匠 on 2017/08/26.
+  Copyright © 2017年 st-ventures.jp. All rights reserved.
+*/
+
+// MARK: - 設定アプリへ遷移させるアラートメッセージ
+"SETTING_MESSAGE" = "タイムラインを取得するには、\nログインしてください";
+"SETTING" = "設定";
+
+// MARK: - offline時のアラートメッセージ
+"OFFLINE_MESSAGE" = "通信環境の良い場所で再度お試しください。";
+
+// MARK: - ボタンタイトル
+"BUTTON_OK" = "OK";
+"BUTTON_CANCEL" = "キャンセル";
+
+// MARK: - Pull to Refresh中のメッセージ
+"REFRESH_MESSAGE" = "読み込み中...";

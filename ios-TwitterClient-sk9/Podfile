@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ios-TwitterClient-sk9' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ios-TwitterClient-sk9
+  pod 'Alamofire'
+  pod 'ObjectMapper'
+  pod 'RealmSwift'
+  pod 'STV-Extensions'
+  pod 'SVProgressHUD'
+  pod 'Kingfisher'
+
+  target 'ios-TwitterClient-sk9Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ios-TwitterClient-sk9UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
