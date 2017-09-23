@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="szQ-af-gH2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--音楽検索-->
+        <scene sceneID="U4I-Du-eSs">
+            <objects>
+                <viewController id="bSA-zk-D4j" customClass="SongListViewController" customModule="ios_iTunesSearch_sk10" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hgO-HV-HvG"/>
+                        <viewControllerLayoutGuide type="bottom" id="pio-JJ-YeH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="di8-3X-Vlh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Myu-MN-uqB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bSA-zk-D4j" id="bfH-QT-o7c"/>
+                                </connections>
+                            </searchBar>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="該当の音楽が見つかりません。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK2-Fl-RVw">
+                                <rect key="frame" x="66" y="323" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="117" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CFp-sC-Dhm">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongDetailCell" rowHeight="117" id="3CQ-Xw-Fwn" customClass="SongDetailCell" customModule="ios_iTunesSearch_sk10" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3CQ-Xw-Fwn" id="5S0-lm-Grs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Br3-uE-YRG">
+                                                    <rect key="frame" x="8" y="8" width="66" height="66"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="66" id="a9H-9Z-O0q"/>
+                                                        <constraint firstAttribute="width" secondItem="Br3-uE-YRG" secondAttribute="height" multiplier="1:1" id="dLY-IM-suX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG8-ry-CJC">
+                                                    <rect key="frame" x="92" y="8" width="90" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="F1p-xL-sqs"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfT-PV-xZh">
+                                                    <rect key="frame" x="92" y="37" width="91" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="h3v-8b-MB9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Br3-uE-YRG" firstAttribute="leading" secondItem="5S0-lm-Grs" secondAttribute="leadingMargin" id="0cB-IE-Gmh"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="ZfT-PV-xZh" secondAttribute="trailing" constant="8" id="E0f-xt-RHb"/>
+                                                <constraint firstItem="gG8-ry-CJC" firstAttribute="top" secondItem="5S0-lm-Grs" secondAttribute="topMargin" id="IeR-hX-c4Z"/>
+                                                <constraint firstItem="gG8-ry-CJC" firstAttribute="leading" secondItem="Br3-uE-YRG" secondAttribute="trailing" constant="18" id="LtX-lC-UcE"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="gG8-ry-CJC" secondAttribute="trailing" constant="8" id="MY1-3N-Qcd"/>
+                                                <constraint firstItem="Br3-uE-YRG" firstAttribute="top" secondItem="5S0-lm-Grs" secondAttribute="topMargin" id="OUZ-cj-AJq"/>
+                                                <constraint firstItem="ZfT-PV-xZh" firstAttribute="top" secondItem="gG8-ry-CJC" secondAttribute="bottom" constant="8" id="m1o-Mq-Im4"/>
+                                                <constraint firstItem="ZfT-PV-xZh" firstAttribute="leading" secondItem="Br3-uE-YRG" secondAttribute="trailing" constant="18" id="x1Q-st-ErJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artistNameLabel" destination="ZfT-PV-xZh" id="am1-Vo-yL5"/>
+                                            <outlet property="songIconImageView" destination="Br3-uE-YRG" id="jy6-92-LJH"/>
+                                            <outlet property="songNameLabel" destination="gG8-ry-CJC" id="K1U-Ln-fQI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="bSA-zk-D4j" id="Z3U-YQ-deb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CFp-sC-Dhm" firstAttribute="leading" secondItem="di8-3X-Vlh" secondAttribute="leading" id="17R-TD-5E3"/>
+                            <constraint firstAttribute="trailing" secondItem="CFp-sC-Dhm" secondAttribute="trailing" id="RMV-BS-0b4"/>
+                            <constraint firstItem="CFp-sC-Dhm" firstAttribute="top" secondItem="Myu-MN-uqB" secondAttribute="bottom" id="RrG-H9-gEB"/>
+                            <constraint firstItem="Myu-MN-uqB" firstAttribute="leading" secondItem="di8-3X-Vlh" secondAttribute="leading" id="b4b-pW-5a4"/>
+                            <constraint firstAttribute="trailing" secondItem="Myu-MN-uqB" secondAttribute="trailing" id="ffF-gq-HZB"/>
+                            <constraint firstItem="Myu-MN-uqB" firstAttribute="top" secondItem="hgO-HV-HvG" secondAttribute="bottom" id="fwp-VU-a8b"/>
+                            <constraint firstItem="aK2-Fl-RVw" firstAttribute="centerY" secondItem="di8-3X-Vlh" secondAttribute="centerY" id="hsG-pe-0B4"/>
+                            <constraint firstItem="aK2-Fl-RVw" firstAttribute="centerX" secondItem="di8-3X-Vlh" secondAttribute="centerX" id="kI1-NS-Sbn"/>
+                            <constraint firstItem="pio-JJ-YeH" firstAttribute="top" secondItem="CFp-sC-Dhm" secondAttribute="bottom" id="m4L-73-aFw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="音楽検索" id="yyu-BA-MMd"/>
+                    <connections>
+                        <outlet property="noSongLabel" destination="aK2-Fl-RVw" id="4X1-7C-0cH"/>
+                        <outlet property="songListTableView" destination="CFp-sC-Dhm" id="pPp-O6-sCW"/>
+                        <outlet property="songSearchBar" destination="Myu-MN-uqB" id="mCD-aR-71I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hM-TU-wrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="164.16791604197903"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gIm-08-KDi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="szQ-af-gH2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eMY-5h-MyE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bSA-zk-D4j" kind="relationship" relationship="rootViewController" id="EvM-hR-QTI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcx-Ia-EbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="164.16791604197903"/>
+        </scene>
+    </scenes>
+</document>
