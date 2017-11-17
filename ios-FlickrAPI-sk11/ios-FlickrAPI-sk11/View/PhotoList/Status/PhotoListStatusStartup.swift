@@ -8,8 +8,13 @@
 
 import UIKit
 
-class PhotoListStatusStartup: NSObject, PhotoListStatusType {
+final class PhotoListStatusStartup: NSObject {
     
+}
+
+// MARK: - PhotoListStatusType
+extension PhotoListStatusStartup: PhotoListStatusType {
+ 
     func message() -> String {
         return NSLocalizedString("MSG_STARTUP", comment: "")
     }

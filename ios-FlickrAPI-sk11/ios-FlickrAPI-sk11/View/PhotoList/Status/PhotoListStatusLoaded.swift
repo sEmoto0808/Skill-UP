@@ -8,7 +8,12 @@
 
 import UIKit
 
-final class PhotoListStatusLoaded: NSObject, PhotoListStatusType {
+final class PhotoListStatusLoaded: NSObject {
+    
+}
+
+// MARK: - PhotoListStatusType
+extension PhotoListStatusLoaded: PhotoListStatusType {
     
     func create(collectionView: UICollectionView,
                 indexPath: IndexPath,
@@ -43,4 +48,3 @@ final class PhotoListStatusLoaded: NSObject, PhotoListStatusType {
         return CGSize(width: cellWidth, height: cellHeight)
     }
 }
-

@@ -8,8 +8,13 @@
 
 import UIKit
 
-class PhotoListStatusOffline: NSObject, PhotoListStatusType {
+final class PhotoListStatusOffline: NSObject {
     
+}
+
+// MARK: - PhotoListStatusType
+extension PhotoListStatusOffline: PhotoListStatusType {
+ 
     func message() -> String {
         return NSLocalizedString("MSG_OFFLINE", comment: "")
     }

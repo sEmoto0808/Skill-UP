@@ -8,10 +8,14 @@
 
 import UIKit
 
-class PhotoListStatusNoData: NSObject, PhotoListStatusType {
+final class PhotoListStatusNoData: NSObject {
+    
+}
+
+// MARK: - PhotoListStatusType
+extension PhotoListStatusNoData: PhotoListStatusType {
     
     func message() -> String {
         return NSLocalizedString("MSG_NODATA", comment: "")
     }
 }
-

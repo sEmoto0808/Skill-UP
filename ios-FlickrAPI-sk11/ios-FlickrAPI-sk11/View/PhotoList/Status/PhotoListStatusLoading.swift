@@ -8,7 +8,12 @@
 
 import UIKit
 
-class PhotoListStatusLoading: NSObject, PhotoListStatusType {
+final class PhotoListStatusLoading: NSObject {
+    
+}
+
+// MARK: - PhotoListStatusType
+extension PhotoListStatusLoading: PhotoListStatusType {
     
     func message() -> String {
         return NSLocalizedString("MSG_LOADING", comment: "")
