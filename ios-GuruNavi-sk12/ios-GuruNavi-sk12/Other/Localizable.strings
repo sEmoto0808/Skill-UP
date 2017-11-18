@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  ios-GuruNavi-sk12
+
+  Created by S.Emoto on 2017/11/18.
+  Copyright © 2017年 S.Emoto. All rights reserved.
+*/
+
+/// レストランの検索エリア
+"REST_TITLE" = "%@の飲食店";
+
+/// レストランの検索エリア ヒット件数
+"REST_COUNT" = "%@の飲食店 %@件";
+
+/// 駅からの徒歩でかかる時間
+"WALK_TIME" = " %@ 分";
+
+// offline
+"OFFLINE_MESSAGE" = "通信環境を確認してください。\nエリア一覧に戻ります。";
+
+// offlineアラートのOKボタン
+"BUTTON_OK" = "OK";

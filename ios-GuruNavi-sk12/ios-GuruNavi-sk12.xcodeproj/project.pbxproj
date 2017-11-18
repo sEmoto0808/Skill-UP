@@ -1,0 +1,1015 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0974723C3A96EA2153F5A21F /* Pods_ios_GuruNavi_sk12.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446E8F7F3B4BC2F3606F26E2 /* Pods_ios_GuruNavi_sk12.framework */; };
+		A21B9EEF1FBFBBE500B8D66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21B9EEE1FBFBBE500B8D66F /* AppDelegate.swift */; };
+		A21B9EF61FBFBBE500B8D66F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21B9EF51FBFBBE500B8D66F /* Assets.xcassets */; };
+		A21B9EF91FBFBBE500B8D66F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A21B9EF71FBFBBE500B8D66F /* LaunchScreen.storyboard */; };
+		A21B9F041FBFBBE500B8D66F /* ios_GuruNavi_sk12Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21B9F031FBFBBE500B8D66F /* ios_GuruNavi_sk12Tests.swift */; };
+		A294B87C1FBFBD01005A2AD9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B87B1FBFBCFF005A2AD9 /* APIClient.swift */; };
+		A294B87E1FBFBD1E005A2AD9 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B87D1FBFBD1E005A2AD9 /* APIRouter.swift */; };
+		A294B8811FBFBD49005A2AD9 /* NetworkChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8801FBFBD43005A2AD9 /* NetworkChecker.swift */; };
+		A294B8841FBFBD61005A2AD9 /* OfflineAlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8831FBFBD5C005A2AD9 /* OfflineAlertHelper.swift */; };
+		A294B8881FBFBE4E005A2AD9 /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = A294B8871FBFBE49005A2AD9 /* area.json */; };
+		A294B88C1FBFBEAC005A2AD9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A294B88B1FBFBEAC005A2AD9 /* Localizable.strings */; };
+		A294B8951FBFBF25005A2AD9 /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8941FBFBF25005A2AD9 /* Prefecture.swift */; };
+		A294B8971FBFBF45005A2AD9 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8961FBFBF45005A2AD9 /* Area.swift */; };
+		A294B8991FBFBF5B005A2AD9 /* GuruNaviAreaLarge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8981FBFBF5B005A2AD9 /* GuruNaviAreaLarge.swift */; };
+		A294B89B1FBFBF72005A2AD9 /* AreaDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B89A1FBFBF72005A2AD9 /* AreaDataLoader.swift */; };
+		A294B89F1FBFBFAF005A2AD9 /* Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B89E1FBFBFAF005A2AD9 /* Access.swift */; };
+		A294B8A11FBFBFCB005A2AD9 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8A01FBFBFCB005A2AD9 /* Rest.swift */; };
+		A294B8A31FBFBFE3005A2AD9 /* RestSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8A21FBFBFE3005A2AD9 /* RestSearchResult.swift */; };
+		A294B8A61FBFC001005A2AD9 /* RestSearchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8A51FBFC001005A2AD9 /* RestSearchStatus.swift */; };
+		A294B8A81FBFC018005A2AD9 /* RestSearchParamsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8A71FBFC018005A2AD9 /* RestSearchParamsBuilder.swift */; };
+		A294B8AA1FBFC049005A2AD9 /* RestSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8A91FBFC049005A2AD9 /* RestSearchAPI.swift */; };
+		A294B8AF1FBFC0BF005A2AD9 /* AreaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8AE1FBFC0BF005A2AD9 /* AreaListViewController.swift */; };
+		A294B8B11FBFC0C9005A2AD9 /* AreaListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A294B8B01FBFC0C9005A2AD9 /* AreaListViewController.storyboard */; };
+		A294B8B41FBFC1BE005A2AD9 /* RestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8B31FBFC1BE005A2AD9 /* RestListViewController.swift */; };
+		A294B8B61FBFC1C6005A2AD9 /* RestListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A294B8B51FBFC1C6005A2AD9 /* RestListViewController.storyboard */; };
+		A294B8BA1FBFC55D005A2AD9 /* AreaListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8B91FBFC55D005A2AD9 /* AreaListCell.swift */; };
+		A294B8BC1FBFC57C005A2AD9 /* AreaListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8BB1FBFC57C005A2AD9 /* AreaListProvider.swift */; };
+		A294B8BF1FBFC5CF005A2AD9 /* RestListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8BE1FBFC5CF005A2AD9 /* RestListProvider.swift */; };
+		A294B8C11FBFC612005A2AD9 /* RestListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8C01FBFC612005A2AD9 /* RestListCell.swift */; };
+		A294B8C31FBFC6E7005A2AD9 /* RestListTableFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8C21FBFC6E7005A2AD9 /* RestListTableFooter.swift */; };
+		A294B8C81FBFC9C9005A2AD9 /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = A294B8C71FBFC9C6005A2AD9 /* area.json */; };
+		A294B8CA1FBFC9FF005A2AD9 /* TestAreaDataLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8C91FBFC9FF005A2AD9 /* TestAreaDataLoadable.swift */; };
+		A294B8CC1FBFCA27005A2AD9 /* TestAreaDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8CB1FBFCA27005A2AD9 /* TestAreaDataLoader.swift */; };
+		A294B8CF1FBFCA61005A2AD9 /* restSearchTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = A294B8CE1FBFCA5E005A2AD9 /* restSearchTestData.json */; };
+		A294B8D11FBFCA6C005A2AD9 /* TestRestListDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8D01FBFCA6C005A2AD9 /* TestRestListDataLoader.swift */; };
+		A294B8D31FBFCA8D005A2AD9 /* TestRestSearchLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8D21FBFCA8D005A2AD9 /* TestRestSearchLoadable.swift */; };
+		A294B8D81FBFCAE1005A2AD9 /* AreaDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8D71FBFCAE1005A2AD9 /* AreaDataLoaderTests.swift */; };
+		A294B8DB1FBFCB38005A2AD9 /* GuruNaviAreaLargeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8DA1FBFCB38005A2AD9 /* GuruNaviAreaLargeTests.swift */; };
+		A294B8DD1FBFCB58005A2AD9 /* AreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8DC1FBFCB58005A2AD9 /* AreaTests.swift */; };
+		A294B8DF1FBFCB73005A2AD9 /* PrefectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8DE1FBFCB73005A2AD9 /* PrefectureTests.swift */; };
+		A294B8E31FBFCBB5005A2AD9 /* RestSearchParamsBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8E21FBFCBB5005A2AD9 /* RestSearchParamsBuilderTests.swift */; };
+		A294B8E51FBFCBDA005A2AD9 /* RestSearchAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8E41FBFCBDA005A2AD9 /* RestSearchAPITests.swift */; };
+		A294B8E81FBFCC09005A2AD9 /* RestSearchResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8E71FBFCC09005A2AD9 /* RestSearchResultTests.swift */; };
+		A294B8EA1FBFCC29005A2AD9 /* RestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8E91FBFCC29005A2AD9 /* RestTests.swift */; };
+		A294B8EC1FBFCC4C005A2AD9 /* AccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8EB1FBFCC4C005A2AD9 /* AccessTests.swift */; };
+		A294B8F01FBFCC8B005A2AD9 /* AreaListProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8EF1FBFCC8B005A2AD9 /* AreaListProviderTests.swift */; };
+		A294B8F31FBFCCB4005A2AD9 /* RestListProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294B8F21FBFCCB4005A2AD9 /* RestListProviderTests.swift */; };
+		A9D50C907C11CF17B0BBB8F5 /* Pods_ios_GuruNavi_sk12Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F51A12CE464CFB68650C27 /* Pods_ios_GuruNavi_sk12Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A21B9F001FBFBBE500B8D66F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A21B9EE31FBFBBE500B8D66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A21B9EEA1FBFBBE500B8D66F;
+			remoteInfo = "ios-GuruNavi-sk12";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12BB23F37AE9720775342CF0 /* Pods-ios-GuruNavi-sk12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-GuruNavi-sk12.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-GuruNavi-sk12/Pods-ios-GuruNavi-sk12.debug.xcconfig"; sourceTree = "<group>"; };
+		304BB3D024F88C1319B730B6 /* Pods-ios-GuruNavi-sk12Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-GuruNavi-sk12Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-GuruNavi-sk12Tests/Pods-ios-GuruNavi-sk12Tests.release.xcconfig"; sourceTree = "<group>"; };
+		446E8F7F3B4BC2F3606F26E2 /* Pods_ios_GuruNavi_sk12.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_GuruNavi_sk12.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A22ABEA3DCD2F1F7EB1D751 /* Pods-ios-GuruNavi-sk12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-GuruNavi-sk12.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-GuruNavi-sk12/Pods-ios-GuruNavi-sk12.release.xcconfig"; sourceTree = "<group>"; };
+		87D1044FCC763380DEDECE38 /* Pods-ios-GuruNavi-sk12Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-GuruNavi-sk12Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-GuruNavi-sk12Tests/Pods-ios-GuruNavi-sk12Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A21B9EEB1FBFBBE500B8D66F /* ios-GuruNavi-sk12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-GuruNavi-sk12.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21B9EEE1FBFBBE500B8D66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A21B9EF51FBFBBE500B8D66F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A21B9EF81FBFBBE500B8D66F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A21B9EFA1FBFBBE500B8D66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A21B9EFF1FBFBBE500B8D66F /* ios-GuruNavi-sk12Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-GuruNavi-sk12Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21B9F031FBFBBE500B8D66F /* ios_GuruNavi_sk12Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_GuruNavi_sk12Tests.swift; sourceTree = "<group>"; };
+		A21B9F051FBFBBE500B8D66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A294B87B1FBFBCFF005A2AD9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A294B87D1FBFBD1E005A2AD9 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		A294B8801FBFBD43005A2AD9 /* NetworkChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkChecker.swift; sourceTree = "<group>"; };
+		A294B8831FBFBD5C005A2AD9 /* OfflineAlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineAlertHelper.swift; sourceTree = "<group>"; };
+		A294B8871FBFBE49005A2AD9 /* area.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
+		A294B88B1FBFBEAC005A2AD9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A294B8941FBFBF25005A2AD9 /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
+		A294B8961FBFBF45005A2AD9 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		A294B8981FBFBF5B005A2AD9 /* GuruNaviAreaLarge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuruNaviAreaLarge.swift; sourceTree = "<group>"; };
+		A294B89A1FBFBF72005A2AD9 /* AreaDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDataLoader.swift; sourceTree = "<group>"; };
+		A294B89E1FBFBFAF005A2AD9 /* Access.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Access.swift; sourceTree = "<group>"; };
+		A294B8A01FBFBFCB005A2AD9 /* Rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
+		A294B8A21FBFBFE3005A2AD9 /* RestSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestSearchResult.swift; sourceTree = "<group>"; };
+		A294B8A51FBFC001005A2AD9 /* RestSearchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestSearchStatus.swift; sourceTree = "<group>"; };
+		A294B8A71FBFC018005A2AD9 /* RestSearchParamsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestSearchParamsBuilder.swift; sourceTree = "<group>"; };
+		A294B8A91FBFC049005A2AD9 /* RestSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestSearchAPI.swift; sourceTree = "<group>"; };
+		A294B8AE1FBFC0BF005A2AD9 /* AreaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListViewController.swift; sourceTree = "<group>"; };
+		A294B8B01FBFC0C9005A2AD9 /* AreaListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AreaListViewController.storyboard; sourceTree = "<group>"; };
+		A294B8B31FBFC1BE005A2AD9 /* RestListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestListViewController.swift; sourceTree = "<group>"; };
+		A294B8B51FBFC1C6005A2AD9 /* RestListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestListViewController.storyboard; sourceTree = "<group>"; };
+		A294B8B91FBFC55D005A2AD9 /* AreaListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListCell.swift; sourceTree = "<group>"; };
+		A294B8BB1FBFC57C005A2AD9 /* AreaListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListProvider.swift; sourceTree = "<group>"; };
+		A294B8BE1FBFC5CF005A2AD9 /* RestListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestListProvider.swift; sourceTree = "<group>"; };
+		A294B8C01FBFC612005A2AD9 /* RestListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestListCell.swift; sourceTree = "<group>"; };
+		A294B8C21FBFC6E7005A2AD9 /* RestListTableFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestListTableFooter.swift; sourceTree = "<group>"; };
+		A294B8C71FBFC9C6005A2AD9 /* area.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
+		A294B8C91FBFC9FF005A2AD9 /* TestAreaDataLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAreaDataLoadable.swift; sourceTree = "<group>"; };
+		A294B8CB1FBFCA27005A2AD9 /* TestAreaDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAreaDataLoader.swift; sourceTree = "<group>"; };
+		A294B8CE1FBFCA5E005A2AD9 /* restSearchTestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restSearchTestData.json; sourceTree = "<group>"; };
+		A294B8D01FBFCA6C005A2AD9 /* TestRestListDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRestListDataLoader.swift; sourceTree = "<group>"; };
+		A294B8D21FBFCA8D005A2AD9 /* TestRestSearchLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRestSearchLoadable.swift; sourceTree = "<group>"; };
+		A294B8D71FBFCAE1005A2AD9 /* AreaDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDataLoaderTests.swift; sourceTree = "<group>"; };
+		A294B8DA1FBFCB38005A2AD9 /* GuruNaviAreaLargeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuruNaviAreaLargeTests.swift; sourceTree = "<group>"; };
+		A294B8DC1FBFCB58005A2AD9 /* AreaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTests.swift; sourceTree = "<group>"; };
+		A294B8DE1FBFCB73005A2AD9 /* PrefectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureTests.swift; sourceTree = "<group>"; };
+		A294B8E21FBFCBB5005A2AD9 /* RestSearchParamsBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestSearchParamsBuilderTests.swift; sourceTree = "<group>"; };
+		A294B8E41FBFCBDA005A2AD9 /* RestSearchAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestSearchAPITests.swift; sourceTree = "<group>"; };
+		A294B8E71FBFCC09005A2AD9 /* RestSearchResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestSearchResultTests.swift; sourceTree = "<group>"; };
+		A294B8E91FBFCC29005A2AD9 /* RestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTests.swift; sourceTree = "<group>"; };
+		A294B8EB1FBFCC4C005A2AD9 /* AccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTests.swift; sourceTree = "<group>"; };
+		A294B8EF1FBFCC8B005A2AD9 /* AreaListProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListProviderTests.swift; sourceTree = "<group>"; };
+		A294B8F21FBFCCB4005A2AD9 /* RestListProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestListProviderTests.swift; sourceTree = "<group>"; };
+		B0F51A12CE464CFB68650C27 /* Pods_ios_GuruNavi_sk12Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_GuruNavi_sk12Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A21B9EE81FBFBBE500B8D66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0974723C3A96EA2153F5A21F /* Pods_ios_GuruNavi_sk12.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A21B9EFC1FBFBBE500B8D66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D50C907C11CF17B0BBB8F5 /* Pods_ios_GuruNavi_sk12Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A21B9EE21FBFBBE500B8D66F = {
+			isa = PBXGroup;
+			children = (
+				A21B9EED1FBFBBE500B8D66F /* ios-GuruNavi-sk12 */,
+				A21B9F021FBFBBE500B8D66F /* ios-GuruNavi-sk12Tests */,
+				A21B9EEC1FBFBBE500B8D66F /* Products */,
+				B7D7B40B0512AF6124F50BBE /* Pods */,
+				A699EFB38EE6A15ADF39D974 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A21B9EEC1FBFBBE500B8D66F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A21B9EEB1FBFBBE500B8D66F /* ios-GuruNavi-sk12.app */,
+				A21B9EFF1FBFBBE500B8D66F /* ios-GuruNavi-sk12Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A21B9EED1FBFBBE500B8D66F /* ios-GuruNavi-sk12 */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8B71FBFC538005A2AD9 /* View */,
+				A294B8AB1FBFC076005A2AD9 /* Controller */,
+				A294B88A1FBFBE6B005A2AD9 /* Model */,
+				A294B8891FBFBE5A005A2AD9 /* Other */,
+				A294B8861FBFBE00005A2AD9 /* Resource */,
+				A294B8791FBFBCD7005A2AD9 /* Helper */,
+				A21B9EFA1FBFBBE500B8D66F /* Info.plist */,
+			);
+			path = "ios-GuruNavi-sk12";
+			sourceTree = "<group>";
+		};
+		A21B9F021FBFBBE500B8D66F /* ios-GuruNavi-sk12Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8ED1FBFCC6F005A2AD9 /* View */,
+				A294B8D41FBFCAA9005A2AD9 /* Model */,
+				A294B8C51FBFC9A8005A2AD9 /* TestData */,
+				A21B9F031FBFBBE500B8D66F /* ios_GuruNavi_sk12Tests.swift */,
+				A21B9F051FBFBBE500B8D66F /* Info.plist */,
+			);
+			path = "ios-GuruNavi-sk12Tests";
+			sourceTree = "<group>";
+		};
+		A294B8791FBFBCD7005A2AD9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8821FBFBD4F005A2AD9 /* Alert */,
+				A294B87F1FBFBD2A005A2AD9 /* Network */,
+				A294B87A1FBFBCE3005A2AD9 /* API */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A294B87A1FBFBCE3005A2AD9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A294B87B1FBFBCFF005A2AD9 /* APIClient.swift */,
+				A294B87D1FBFBD1E005A2AD9 /* APIRouter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A294B87F1FBFBD2A005A2AD9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8801FBFBD43005A2AD9 /* NetworkChecker.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A294B8821FBFBD4F005A2AD9 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8831FBFBD5C005A2AD9 /* OfflineAlertHelper.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		A294B8861FBFBE00005A2AD9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8871FBFBE49005A2AD9 /* area.json */,
+				A21B9EF51FBFBBE500B8D66F /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A294B8891FBFBE5A005A2AD9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A21B9EEE1FBFBBE500B8D66F /* AppDelegate.swift */,
+				A294B88B1FBFBEAC005A2AD9 /* Localizable.strings */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A294B88A1FBFBE6B005A2AD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A294B89C1FBFBF86005A2AD9 /* Rest */,
+				A294B88D1FBFBEC4005A2AD9 /* Area */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A294B88D1FBFBEC4005A2AD9 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8911FBFBEEC005A2AD9 /* Data */,
+				A294B88E1FBFBECE005A2AD9 /* Loader */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		A294B88E1FBFBECE005A2AD9 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				A294B89A1FBFBF72005A2AD9 /* AreaDataLoader.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		A294B8911FBFBEEC005A2AD9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8941FBFBF25005A2AD9 /* Prefecture.swift */,
+				A294B8961FBFBF45005A2AD9 /* Area.swift */,
+				A294B8981FBFBF5B005A2AD9 /* GuruNaviAreaLarge.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A294B89C1FBFBF86005A2AD9 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8A41FBFBFF1005A2AD9 /* API */,
+				A294B89D1FBFBF9E005A2AD9 /* Response */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		A294B89D1FBFBF9E005A2AD9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A294B89E1FBFBFAF005A2AD9 /* Access.swift */,
+				A294B8A01FBFBFCB005A2AD9 /* Rest.swift */,
+				A294B8A21FBFBFE3005A2AD9 /* RestSearchResult.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		A294B8A41FBFBFF1005A2AD9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8A51FBFC001005A2AD9 /* RestSearchStatus.swift */,
+				A294B8A71FBFC018005A2AD9 /* RestSearchParamsBuilder.swift */,
+				A294B8A91FBFC049005A2AD9 /* RestSearchAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A294B8AB1FBFC076005A2AD9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8B21FBFC1A5005A2AD9 /* Rest */,
+				A294B8AD1FBFC0A2005A2AD9 /* Area */,
+				A294B8AC1FBFC081005A2AD9 /* Startup */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A294B8AC1FBFC081005A2AD9 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				A21B9EF71FBFBBE500B8D66F /* LaunchScreen.storyboard */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		A294B8AD1FBFC0A2005A2AD9 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8AE1FBFC0BF005A2AD9 /* AreaListViewController.swift */,
+				A294B8B01FBFC0C9005A2AD9 /* AreaListViewController.storyboard */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		A294B8B21FBFC1A5005A2AD9 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8B31FBFC1BE005A2AD9 /* RestListViewController.swift */,
+				A294B8B51FBFC1C6005A2AD9 /* RestListViewController.storyboard */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		A294B8B71FBFC538005A2AD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8BD1FBFC5C7005A2AD9 /* Rest */,
+				A294B8B81FBFC540005A2AD9 /* Area */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A294B8B81FBFC540005A2AD9 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8B91FBFC55D005A2AD9 /* AreaListCell.swift */,
+				A294B8BB1FBFC57C005A2AD9 /* AreaListProvider.swift */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		A294B8BD1FBFC5C7005A2AD9 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8BE1FBFC5CF005A2AD9 /* RestListProvider.swift */,
+				A294B8C01FBFC612005A2AD9 /* RestListCell.swift */,
+				A294B8C21FBFC6E7005A2AD9 /* RestListTableFooter.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		A294B8C51FBFC9A8005A2AD9 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8CD1FBFCA4B005A2AD9 /* Rest */,
+				A294B8C61FBFC9B1005A2AD9 /* Area */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		A294B8C61FBFC9B1005A2AD9 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8C71FBFC9C6005A2AD9 /* area.json */,
+				A294B8C91FBFC9FF005A2AD9 /* TestAreaDataLoadable.swift */,
+				A294B8CB1FBFCA27005A2AD9 /* TestAreaDataLoader.swift */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		A294B8CD1FBFCA4B005A2AD9 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8CE1FBFCA5E005A2AD9 /* restSearchTestData.json */,
+				A294B8D01FBFCA6C005A2AD9 /* TestRestListDataLoader.swift */,
+				A294B8D21FBFCA8D005A2AD9 /* TestRestSearchLoadable.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		A294B8D41FBFCAA9005A2AD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8E01FBFCB94005A2AD9 /* Rest */,
+				A294B8D51FBFCABD005A2AD9 /* Area */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A294B8D51FBFCABD005A2AD9 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8D91FBFCB19005A2AD9 /* Data */,
+				A294B8D61FBFCAC4005A2AD9 /* Loader */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		A294B8D61FBFCAC4005A2AD9 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8D71FBFCAE1005A2AD9 /* AreaDataLoaderTests.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		A294B8D91FBFCB19005A2AD9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8DA1FBFCB38005A2AD9 /* GuruNaviAreaLargeTests.swift */,
+				A294B8DC1FBFCB58005A2AD9 /* AreaTests.swift */,
+				A294B8DE1FBFCB73005A2AD9 /* PrefectureTests.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A294B8E01FBFCB94005A2AD9 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8E61FBFCBFA005A2AD9 /* Response */,
+				A294B8E11FBFCB9D005A2AD9 /* API */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		A294B8E11FBFCB9D005A2AD9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8E21FBFCBB5005A2AD9 /* RestSearchParamsBuilderTests.swift */,
+				A294B8E41FBFCBDA005A2AD9 /* RestSearchAPITests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A294B8E61FBFCBFA005A2AD9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8E71FBFCC09005A2AD9 /* RestSearchResultTests.swift */,
+				A294B8E91FBFCC29005A2AD9 /* RestTests.swift */,
+				A294B8EB1FBFCC4C005A2AD9 /* AccessTests.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		A294B8ED1FBFCC6F005A2AD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8F11FBFCCAC005A2AD9 /* Rest */,
+				A294B8EE1FBFCC7E005A2AD9 /* Area */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A294B8EE1FBFCC7E005A2AD9 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8EF1FBFCC8B005A2AD9 /* AreaListProviderTests.swift */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		A294B8F11FBFCCAC005A2AD9 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				A294B8F21FBFCCB4005A2AD9 /* RestListProviderTests.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		A699EFB38EE6A15ADF39D974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				446E8F7F3B4BC2F3606F26E2 /* Pods_ios_GuruNavi_sk12.framework */,
+				B0F51A12CE464CFB68650C27 /* Pods_ios_GuruNavi_sk12Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7D7B40B0512AF6124F50BBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12BB23F37AE9720775342CF0 /* Pods-ios-GuruNavi-sk12.debug.xcconfig */,
+				7A22ABEA3DCD2F1F7EB1D751 /* Pods-ios-GuruNavi-sk12.release.xcconfig */,
+				87D1044FCC763380DEDECE38 /* Pods-ios-GuruNavi-sk12Tests.debug.xcconfig */,
+				304BB3D024F88C1319B730B6 /* Pods-ios-GuruNavi-sk12Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A21B9EEA1FBFBBE500B8D66F /* ios-GuruNavi-sk12 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A21B9F081FBFBBE500B8D66F /* Build configuration list for PBXNativeTarget "ios-GuruNavi-sk12" */;
+			buildPhases = (
+				0F3CC70451ADA7BF32E4E039 /* [CP] Check Pods Manifest.lock */,
+				A21B9EE71FBFBBE500B8D66F /* Sources */,
+				A21B9EE81FBFBBE500B8D66F /* Frameworks */,
+				A21B9EE91FBFBBE500B8D66F /* Resources */,
+				22AC3C71A3714A26DD6D819E /* [CP] Embed Pods Frameworks */,
+				D3EB62CED9F199390C7E2228 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-GuruNavi-sk12";
+			productName = "ios-GuruNavi-sk12";
+			productReference = A21B9EEB1FBFBBE500B8D66F /* ios-GuruNavi-sk12.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A21B9EFE1FBFBBE500B8D66F /* ios-GuruNavi-sk12Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A21B9F0B1FBFBBE500B8D66F /* Build configuration list for PBXNativeTarget "ios-GuruNavi-sk12Tests" */;
+			buildPhases = (
+				BE44650EBFD104A71DE45D00 /* [CP] Check Pods Manifest.lock */,
+				A21B9EFB1FBFBBE500B8D66F /* Sources */,
+				A21B9EFC1FBFBBE500B8D66F /* Frameworks */,
+				A21B9EFD1FBFBBE500B8D66F /* Resources */,
+				8F17DDB64B37C9A196B7FFF7 /* [CP] Embed Pods Frameworks */,
+				B35A3ACFDEB5DA195E5AD909 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A21B9F011FBFBBE500B8D66F /* PBXTargetDependency */,
+			);
+			name = "ios-GuruNavi-sk12Tests";
+			productName = "ios-GuruNavi-sk12Tests";
+			productReference = A21B9EFF1FBFBBE500B8D66F /* ios-GuruNavi-sk12Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A21B9EE31FBFBBE500B8D66F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = S.Emoto;
+				TargetAttributes = {
+					A21B9EEA1FBFBBE500B8D66F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					A21B9EFE1FBFBBE500B8D66F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A21B9EEA1FBFBBE500B8D66F;
+					};
+				};
+			};
+			buildConfigurationList = A21B9EE61FBFBBE500B8D66F /* Build configuration list for PBXProject "ios-GuruNavi-sk12" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A21B9EE21FBFBBE500B8D66F;
+			productRefGroup = A21B9EEC1FBFBBE500B8D66F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A21B9EEA1FBFBBE500B8D66F /* ios-GuruNavi-sk12 */,
+				A21B9EFE1FBFBBE500B8D66F /* ios-GuruNavi-sk12Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A21B9EE91FBFBBE500B8D66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A294B88C1FBFBEAC005A2AD9 /* Localizable.strings in Resources */,
+				A21B9EF91FBFBBE500B8D66F /* LaunchScreen.storyboard in Resources */,
+				A294B8B11FBFC0C9005A2AD9 /* AreaListViewController.storyboard in Resources */,
+				A21B9EF61FBFBBE500B8D66F /* Assets.xcassets in Resources */,
+				A294B8881FBFBE4E005A2AD9 /* area.json in Resources */,
+				A294B8B61FBFC1C6005A2AD9 /* RestListViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A21B9EFD1FBFBBE500B8D66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A294B8C81FBFC9C9005A2AD9 /* area.json in Resources */,
+				A294B8CF1FBFCA61005A2AD9 /* restSearchTestData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F3CC70451ADA7BF32E4E039 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-GuruNavi-sk12-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22AC3C71A3714A26DD6D819E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-GuruNavi-sk12/Pods-ios-GuruNavi-sk12-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/STV-Extensions/STV_Extensions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STV_Extensions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-GuruNavi-sk12/Pods-ios-GuruNavi-sk12-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F17DDB64B37C9A196B7FFF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-GuruNavi-sk12Tests/Pods-ios-GuruNavi-sk12Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B35A3ACFDEB5DA195E5AD909 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-GuruNavi-sk12Tests/Pods-ios-GuruNavi-sk12Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE44650EBFD104A71DE45D00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-GuruNavi-sk12Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3EB62CED9F199390C7E2228 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-GuruNavi-sk12/Pods-ios-GuruNavi-sk12-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A21B9EE71FBFBBE500B8D66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A294B89F1FBFBFAF005A2AD9 /* Access.swift in Sources */,
+				A294B8951FBFBF25005A2AD9 /* Prefecture.swift in Sources */,
+				A294B8841FBFBD61005A2AD9 /* OfflineAlertHelper.swift in Sources */,
+				A294B8A31FBFBFE3005A2AD9 /* RestSearchResult.swift in Sources */,
+				A294B8A11FBFBFCB005A2AD9 /* Rest.swift in Sources */,
+				A294B89B1FBFBF72005A2AD9 /* AreaDataLoader.swift in Sources */,
+				A294B8AF1FBFC0BF005A2AD9 /* AreaListViewController.swift in Sources */,
+				A294B8991FBFBF5B005A2AD9 /* GuruNaviAreaLarge.swift in Sources */,
+				A294B87E1FBFBD1E005A2AD9 /* APIRouter.swift in Sources */,
+				A294B8A81FBFC018005A2AD9 /* RestSearchParamsBuilder.swift in Sources */,
+				A294B8BF1FBFC5CF005A2AD9 /* RestListProvider.swift in Sources */,
+				A294B8BA1FBFC55D005A2AD9 /* AreaListCell.swift in Sources */,
+				A294B8A61FBFC001005A2AD9 /* RestSearchStatus.swift in Sources */,
+				A294B8C11FBFC612005A2AD9 /* RestListCell.swift in Sources */,
+				A294B8BC1FBFC57C005A2AD9 /* AreaListProvider.swift in Sources */,
+				A294B8811FBFBD49005A2AD9 /* NetworkChecker.swift in Sources */,
+				A294B8B41FBFC1BE005A2AD9 /* RestListViewController.swift in Sources */,
+				A294B8AA1FBFC049005A2AD9 /* RestSearchAPI.swift in Sources */,
+				A21B9EEF1FBFBBE500B8D66F /* AppDelegate.swift in Sources */,
+				A294B8C31FBFC6E7005A2AD9 /* RestListTableFooter.swift in Sources */,
+				A294B8971FBFBF45005A2AD9 /* Area.swift in Sources */,
+				A294B87C1FBFBD01005A2AD9 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A21B9EFB1FBFBBE500B8D66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A294B8E81FBFCC09005A2AD9 /* RestSearchResultTests.swift in Sources */,
+				A294B8E51FBFCBDA005A2AD9 /* RestSearchAPITests.swift in Sources */,
+				A294B8CA1FBFC9FF005A2AD9 /* TestAreaDataLoadable.swift in Sources */,
+				A294B8DB1FBFCB38005A2AD9 /* GuruNaviAreaLargeTests.swift in Sources */,
+				A21B9F041FBFBBE500B8D66F /* ios_GuruNavi_sk12Tests.swift in Sources */,
+				A294B8F01FBFCC8B005A2AD9 /* AreaListProviderTests.swift in Sources */,
+				A294B8EC1FBFCC4C005A2AD9 /* AccessTests.swift in Sources */,
+				A294B8D11FBFCA6C005A2AD9 /* TestRestListDataLoader.swift in Sources */,
+				A294B8D31FBFCA8D005A2AD9 /* TestRestSearchLoadable.swift in Sources */,
+				A294B8CC1FBFCA27005A2AD9 /* TestAreaDataLoader.swift in Sources */,
+				A294B8EA1FBFCC29005A2AD9 /* RestTests.swift in Sources */,
+				A294B8DD1FBFCB58005A2AD9 /* AreaTests.swift in Sources */,
+				A294B8DF1FBFCB73005A2AD9 /* PrefectureTests.swift in Sources */,
+				A294B8D81FBFCAE1005A2AD9 /* AreaDataLoaderTests.swift in Sources */,
+				A294B8F31FBFCCB4005A2AD9 /* RestListProviderTests.swift in Sources */,
+				A294B8E31FBFCBB5005A2AD9 /* RestSearchParamsBuilderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A21B9F011FBFBBE500B8D66F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A21B9EEA1FBFBBE500B8D66F /* ios-GuruNavi-sk12 */;
+			targetProxy = A21B9F001FBFBBE500B8D66F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A21B9EF71FBFBBE500B8D66F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A21B9EF81FBFBBE500B8D66F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A21B9F061FBFBBE500B8D66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A21B9F071FBFBBE500B8D66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A21B9F091FBFBBE500B8D66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12BB23F37AE9720775342CF0 /* Pods-ios-GuruNavi-sk12.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCRE7XME38;
+				INFOPLIST_FILE = "ios-GuruNavi-sk12/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "st-ventures.jp.ios-GuruNavi-sk12";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A21B9F0A1FBFBBE500B8D66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A22ABEA3DCD2F1F7EB1D751 /* Pods-ios-GuruNavi-sk12.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCRE7XME38;
+				INFOPLIST_FILE = "ios-GuruNavi-sk12/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "st-ventures.jp.ios-GuruNavi-sk12";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A21B9F0C1FBFBBE500B8D66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D1044FCC763380DEDECE38 /* Pods-ios-GuruNavi-sk12Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCRE7XME38;
+				INFOPLIST_FILE = "ios-GuruNavi-sk12Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "st-ventures.jp.ios-GuruNavi-sk12Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-GuruNavi-sk12.app/ios-GuruNavi-sk12";
+			};
+			name = Debug;
+		};
+		A21B9F0D1FBFBBE500B8D66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 304BB3D024F88C1319B730B6 /* Pods-ios-GuruNavi-sk12Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCRE7XME38;
+				INFOPLIST_FILE = "ios-GuruNavi-sk12Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "st-ventures.jp.ios-GuruNavi-sk12Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-GuruNavi-sk12.app/ios-GuruNavi-sk12";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A21B9EE61FBFBBE500B8D66F /* Build configuration list for PBXProject "ios-GuruNavi-sk12" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A21B9F061FBFBBE500B8D66F /* Debug */,
+				A21B9F071FBFBBE500B8D66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A21B9F081FBFBBE500B8D66F /* Build configuration list for PBXNativeTarget "ios-GuruNavi-sk12" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A21B9F091FBFBBE500B8D66F /* Debug */,
+				A21B9F0A1FBFBBE500B8D66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A21B9F0B1FBFBBE500B8D66F /* Build configuration list for PBXNativeTarget "ios-GuruNavi-sk12Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A21B9F0C1FBFBBE500B8D66F /* Debug */,
+				A21B9F0D1FBFBBE500B8D66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A21B9EE31FBFBBE500B8D66F /* Project object */;
+}

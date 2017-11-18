@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gya-jR-6NK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--エリア一覧-->
+        <scene sceneID="Wik-I4-8Dk">
+            <objects>
+                <viewController storyboardIdentifier="AreaListViewController" id="am9-UP-vWn" customClass="AreaListViewController" customModule="ios_GuruNavi_sk12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LXm-YR-aPa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T9E-ed-ZUF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AreaListCell" id="Mvp-3N-RJV" customClass="AreaListCell" customModule="ios_GuruNavi_sk12" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mvp-3N-RJV" id="waU-qx-Zum">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="am9-UP-vWn" id="N5i-CF-Vuk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T9E-ed-ZUF" firstAttribute="trailing" secondItem="7GH-pE-fKg" secondAttribute="trailing" id="QQl-Ut-XGt"/>
+                            <constraint firstItem="T9E-ed-ZUF" firstAttribute="top" secondItem="7GH-pE-fKg" secondAttribute="top" id="hTX-tX-xJI"/>
+                            <constraint firstItem="T9E-ed-ZUF" firstAttribute="leading" secondItem="7GH-pE-fKg" secondAttribute="leading" id="r0X-9E-xnz"/>
+                            <constraint firstItem="T9E-ed-ZUF" firstAttribute="bottom" secondItem="7GH-pE-fKg" secondAttribute="bottom" id="y6y-ol-o1B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7GH-pE-fKg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="エリア一覧" id="NBM-1B-EJU"/>
+                    <connections>
+                        <outlet property="areaListTableView" destination="T9E-ed-ZUF" id="fBG-zT-Q7N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDD-a8-4Zb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="145.27736131934034"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fp6-OJ-5nj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gya-jR-6NK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ymd-2h-qJk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="am9-UP-vWn" kind="relationship" relationship="rootViewController" id="IQH-hm-s07"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFW-v1-cLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-270" y="145"/>
+        </scene>
+    </scenes>
+</document>

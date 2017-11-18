@@ -1,0 +1,6 @@
+framework module Pods_ios_GuruNavi_sk12Tests {
+  umbrella header "Pods-ios-GuruNavi-sk12Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
