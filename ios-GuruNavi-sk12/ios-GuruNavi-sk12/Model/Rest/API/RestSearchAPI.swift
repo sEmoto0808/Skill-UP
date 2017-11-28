@@ -46,8 +46,11 @@ final class RestSearchAPI {
             }
         }
     }
+}
+
+//MARK:- リクエスト回数の管理
+extension RestSearchAPI {
     
-    //MARK:- リクエスト回数の管理
     func current() -> Int {
         return requestCount
     }
@@ -64,7 +67,7 @@ final class RestSearchAPI {
         self.totalCount = total
     }
     
-    func isMoreRequest() -> Bool{
+    func isMoreRequest() -> Bool {
         
         if totalCount > requestCount * RestSearchParamsBuilder.perPage {
             increment()
@@ -74,6 +77,4 @@ final class RestSearchAPI {
         }
     }
 }
-
-
 

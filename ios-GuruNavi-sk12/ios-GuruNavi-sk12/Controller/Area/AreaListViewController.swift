@@ -12,10 +12,11 @@ class AreaListViewController: UIViewController {
 
     @IBOutlet weak var areaListTableView: UITableView!
     
-    fileprivate let dataSource = AreaListProvider()
-    fileprivate let areaDataLoader = AreaDataLoader()
+    // MARK: - Instance
+    private let dataSource = AreaListProvider()
+    private let areaDataLoader = AreaDataLoader()
     
-    fileprivate let prefName = "東京都"
+    private let prefName = "東京都"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,7 @@ extension AreaListViewController: AreaDataLoadable {
     }
 }
 
+// MARK: - file extension
 extension AreaListViewController {
     
     func setup() {

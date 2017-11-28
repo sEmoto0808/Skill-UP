@@ -10,17 +10,19 @@ import UIKit
 
 class RestListViewController: UIViewController {
 
+    // MARK: - IBOutlet
     @IBOutlet weak var restListTableView: UITableView!
     @IBOutlet var nextLoadingFooter: RestListTableFooter!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
-    fileprivate let dataSource = RestListProvider()
-    fileprivate let restSearchAPI = RestSearchAPI()
-    //fileprivate let pageManager = RestListPageManager.sharedInstance
     
-    // エリア一覧画面からもらう
-    fileprivate var area: Area?
-    fileprivate var lastAreaCode = ""
-    fileprivate var offlineAlert: UIAlertController?
+    // MARK: - Instance
+    private let dataSource = RestListProvider()
+    private let restSearchAPI = RestSearchAPI()
+    
+    // MARK: - Property
+    private var area: Area?
+    private var lastAreaCode = ""
+    private var offlineAlert: UIAlertController?
     
     //MARK : - Factorys
     class func create(area: Area) -> RestListViewController {
@@ -45,7 +47,7 @@ class RestListViewController: UIViewController {
 extension RestListViewController: UIScrollViewDelegate {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView){
-        // スクロールストップ　2回呼ばれないからややあり
+        
         guard restListTableView.isScrollEnd() && !loadingIndicator.isAnimating else {
             return
         }
@@ -143,7 +145,6 @@ extension RestListViewController {
     
     // 初回レストラン一覧を取得する
     func loadRest(areaCode: String) {
-        //pageManager.reset()
         restSearchAPI.loadable = self
         restSearchAPI.reset()
         restSearchAPI.load(areaCode: areaCode)

@@ -10,7 +10,7 @@ import UIKit
 
 class RestListProvider: NSObject {
 
-    var restList = [Rest]()
+    private var restList = [Rest]()
     
     func set(restList: [Rest]) {
         if restList.isEmpty {
