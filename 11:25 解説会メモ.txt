@@ -1,0 +1,6 @@
+11/25 解説会 メモ
+
+変数宣言
+■privateとfileprivateのアクセス可能範囲の違い
+　private     → 同じファイル内 かつ 同じクラスのextension であればアクセス可
+　fileprivate → 同じファイル内                         であればアクセス可
